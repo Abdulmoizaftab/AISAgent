@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\AIS]
+"NoOfCameras"="1"
+"ATMID"="00001111"
+"ImageWidth"="640"
+"ImageHieght"="480"
+"TrxnCounter"="1"
+"Username"="administrator"
+"ImageUploaded"="172641701_8398_1001_0006_1.jpg"
+"Port"="21"
+"Server"="10.21.21.212"
+"RetryConnFailureInterval"="60"
+"Password"="Win2100"
+"ImageUploadingInterval"="4"
+"JournalPath"="C\:\\Journal"
+"ImageQuality"="0.40f"
+"ImagePath"="C\:\\Users\\aaftab\\Documents\\NetBeansProjects\\AISAgent\\Images"
+"ImageUploadedDate"="20170414"

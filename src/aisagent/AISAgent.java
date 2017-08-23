@@ -8,29 +8,27 @@ package aisagent;
 import com.github.sarxos.webcam.Webcam;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.LineNumberReader;
-import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.lang.reflect.InvocationTargetException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Properties;
-//import java.util.logging.Logger;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.imageio.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 
 
 /**
@@ -82,34 +80,19 @@ public class AISAgent {
           int imwidth=640;
           int imhieght=480;
           int trxncounter=0;
-           OutputStream output = null;
-           Properties prop= new Properties();
-       
+           
           
           try {
-              
-//                        File outDir = new File("./Logs");
-//                         if (!outDir.exists()){
-//                        outDir.mkdirs();
-//                         }
                          
                          if (!TempDir.exists()){
                         TempDir.mkdirs();
                          }
-                        // This block configure the logger with handler and formatter
-//                        fh = new FileHandler(".\\Logs\\AISAgent.log",true);
-//                        logger.addHandler(fh);
-//                        SimpleFormatter formatter = new SimpleFormatter();
-//                        fh.setFormatter(formatter);
-//                        fh.setLevel(Level.ALL);
-//                        logger.setLevel(Level.ALL);
-
                         Thread.currentThread().setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { 
             public void uncaughtException(Thread t, Throwable e) { 
                 StringWriter sw = new StringWriter();
                 e.printStackTrace(new PrintWriter(sw));
                 String stacktrace = sw.toString();
-                logger.error(stacktrace);
+                logger.error("Error: ",stacktrace);
             }
         });
                        
@@ -134,12 +117,7 @@ public class AISAgent {
           logger.info("Names="+Webcam.getWebcams());
           
                     
-//           Webcam webcam = Webcam.getWebcams().get(2);
-//                   //.getDefault();
-//          
-//
-//        webcam.setViewSize(new Dimension(640,480));
-            
+
           
                     String ImagePath=null;
                     String JournalPath=null;
@@ -164,31 +142,33 @@ public class AISAgent {
                 
         
                         
-                        try{
-                            
-                            InputStream input =new FileInputStream("config.properties");
+                
                             
                            
-                            prop.load(input);
                             
-ImagePath=prop.getProperty("ImagePath");
-JournalPath=prop.getProperty("JournalPath");
-DeviceID=prop.getProperty("ATMID");
+                           
+                          
+                            
+                            
+
+ImagePath=WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","ImagePath"); 
+JournalPath=WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","JournalPath");
+DeviceID=WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","ATMID");
 try{
-NoOfCameras=Integer.parseInt(prop.getProperty("NoOfCameras"));
-trxncounter=Integer.parseInt(prop.getProperty("TrxnCounter"));
-ImageQuality=Float.parseFloat(prop.getProperty("ImageQuality"));
-imwidth=Integer.parseInt(prop.getProperty("ImageWidth"));
-imhieght=Integer.parseInt(prop.getProperty("ImageHieght"));
+NoOfCameras=Integer.parseInt(WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","NoOfCameras"));
+trxncounter=Integer.parseInt(WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","TrxnCounter"));
+ImageQuality=Float.parseFloat(WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","ImageQuality"));
+imwidth=Integer.parseInt(WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","ImageWidth"));
+imhieght=Integer.parseInt(WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","ImageHieght"));
 }
 catch (NumberFormatException ex) {
             
-            logger.error("Error:", ex);
-            NoOfCameras=1;   
+          logger.error("Error:", ex);
+          NoOfCameras=1;   
           ImageQuality=0.4f;
           imwidth=640;
           imhieght=480;
-                  
+                  trxncounter=0;
         }
 System.out.println("No. of Cameras to work with="+NoOfCameras);
 System.out.println("Image Quality set="+ImageQuality);
@@ -197,10 +177,6 @@ System.out.println("Image Quality set="+ImageQuality);
                         outDir.mkdirs();
                        }
 
-                        } catch (IOException ex) {
-                           // Logger.getLogger(AISAgent.class.getName()).log(Level.SEVERE, null, ex);
-                            logger.error("Error:", ex);
-                        }
                         if(NoOfCameras>0){                       
                            if(Camera1==null){
                             cam1.Open(imwidth,imhieght);
@@ -278,8 +254,11 @@ System.out.println("Image Quality set="+ImageQuality);
                             if(!file.exists()){
                                 System.out.println(""+JournalPath+"\\"+Date+".jrn not found");
                                 logger.info(""+JournalPath+"\\"+Date+".jrn not found");
-                                //fh.close();
-                                Thread.sleep(10000);
+                                 BufferedWriter writer = null;
+            writer= new BufferedWriter(new FileWriter(""+JournalPath+"\\"+Date+".jrn",true));
+            logger.info(""+JournalPath+"\\"+Date+".jrn made");
+                              
+                              
                              continue;   
                            // break;
                             }
@@ -309,18 +288,18 @@ System.out.println("Image Quality set="+ImageQuality);
                                     Calendar cal1 = Calendar.getInstance();
                                     Date datetemp1= cal1.getTime();
                                     String Date1=dateFormat.format(datetemp1);
-                                   // Date1="20161207";
+                                  
                                     if(!Date1.equals(Date)){
                                     run=false;
                                     }
                             
                             FileSizenew=file.length();
-                            System.out.println(FileSizenew);
+                            System.out.println("EJ Size= "+FileSizenew+" B");
                             
                               if (FileSizenew>FileSizeold){
                                fr = new FileReader(file);
                             
-                              System.out.println("File Size Changed");
+                              System.out.println("EJ Edited");
                                br = new BufferedReader(fr);
                                ImagePath1=ImagePath+"\\"+DeviceID+"\\"+Date;
                                File outDir1 = new File(ImagePath1);
@@ -338,11 +317,14 @@ System.out.println("Image Quality set="+ImageQuality);
                             System.out.println(s);
                            if(s.contains("TRANSACTION START")||s.contains("transaction start")){
                            trxncounter=trxncounter+1;
-                           output = new FileOutputStream("config.properties");
-		prop.setProperty("TrxnCounter", trxncounter+"");
-		prop.store(output, null);
-                output.close();
-                
+                           
+
+                WinRegistry.writeStringValue(WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","TrxnCounter",trxncounter+"");
+            
+         
+
+        
+		
                            EventNo="1000";
                            s1=s;
                            
@@ -492,18 +474,16 @@ System.out.println("Image Quality set="+ImageQuality);
                             temp="";
                             
                               }
-                             Thread.sleep(500);
+                             Thread.sleep(400);
                             
                             }
                         
                             
                          
                              trxncounter=0;
-                             output = new FileOutputStream("config.properties");
-		prop.setProperty("TrxnCounter", trxncounter+"");
-		prop.store(output, null);
-                output.close();
-                            
+                          
+                             WinRegistry.writeStringValue(WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","TrxnCounter", trxncounter+"");
+		            
                             
                  
                  System.out.println("Date changed");           
@@ -523,11 +503,16 @@ System.out.println("Image Quality set="+ImageQuality);
         } catch (InterruptedException ex) {
             //Logger.getLogger(AISAgent.class.getName()).log(Level.SEVERE, null, ex);
             logger.error( "Error:",ex);
-        }
-                        catch (IOException ex) {
+        } catch (IOException ex) {
                 //  Logger.getLogger(AISAgent.class.getName()).log(Level.SEVERE, null, ex);
                   logger.error( "Error:",ex);
-              }
+        } catch (IllegalArgumentException ex) {
+            logger.error("Error:", ex);
+        } catch (IllegalAccessException ex) {
+             logger.error("Error:", ex);
+        } catch (InvocationTargetException ex) {
+             logger.error("Error:", ex);
+        }
                     
          
     }
