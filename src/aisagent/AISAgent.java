@@ -15,8 +15,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.LineNumberReader;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -89,10 +87,8 @@ public class AISAgent {
                          }
                         Thread.currentThread().setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { 
             public void uncaughtException(Thread t, Throwable e) { 
-                StringWriter sw = new StringWriter();
-                e.printStackTrace(new PrintWriter(sw));
-                String stacktrace = sw.toString();
-                logger.error("Error: ",stacktrace);
+              
+                logger.error("Error: UncaughtException: ",e);
             }
         });
                        
@@ -140,16 +136,6 @@ public class AISAgent {
           
              boolean run= true;        
                 
-        
-                        
-                
-                            
-                           
-                            
-                           
-                          
-                            
-                            
 
 ImagePath=WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","ImagePath"); 
 JournalPath=WinRegistry.readString (WinRegistry.HKEY_LOCAL_MACHINE,"SOFTWARE\\AIS","JournalPath");

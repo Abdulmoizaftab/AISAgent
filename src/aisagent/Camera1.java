@@ -22,7 +22,7 @@ import org.apache.logging.log4j.Logger;
 public class Camera1 {
      public static Logger logger = LogManager.getLogger(Camera1.class.getName());
     public void Open(int w, int h){
-        AISAgent.Camera1 = Webcam.getWebcams().get(0);                
+        AISAgent.Camera1 = Webcam.getWebcams().get(0);      
         AISAgent.Camera1.setViewSize(new Dimension(w,h));
         AISAgent.Camera1.open();
     }
