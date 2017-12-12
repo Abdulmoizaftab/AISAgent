@@ -1,0 +1,46 @@
+[2017-08-24 12:28:12,684][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-08-24 12:28:12,691][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-08-24 12:28:12,692][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170824
+[2017-08-24 12:28:12,699][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-08-24 12:28:12,700][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-08-24 12:28:12,701][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-08-24 12:28:12,702][ INFO] [aisagent.AISAgent] [main][AISAgent] - C:\\Journal\20170824.jrn not found
+[2017-08-24 12:28:21,840][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-08-24 12:28:22,721][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-08-24 12:28:22,722][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-08-24 12:28:22,723][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170824
+[2017-08-24 12:28:22,724][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-08-24 12:28:22,724][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-08-24 12:28:22,726][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170824
+[2017-08-24 12:28:22,735][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-08-24 12:28:22,736][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-08-24 12:28:22,736][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-08-24 12:28:22,737][ INFO] [aisagent.AISAgent] [main][AISAgent] - C:\\Journal\20170824.jrn not found
+[2017-08-24 12:28:22,754][ERROR] [aisagent.AISAgent] [main][AISAgent] - Error: 
+[2017-08-24 12:28:32,738][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-08-24 12:28:32,738][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-08-24 12:28:32,739][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170824
+[2017-08-24 12:28:32,741][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-08-24 12:28:32,742][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-08-24 12:28:32,742][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-08-24 12:28:32,743][ INFO] [aisagent.AISAgent] [main][AISAgent] - C:\\Journal\20170824.jrn not found
+[2017-08-24 12:28:42,749][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-08-24 12:28:42,751][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-08-24 12:28:42,752][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170824
+[2017-08-24 12:28:42,753][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-08-24 12:28:42,753][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-08-24 12:28:42,754][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-08-24 12:28:42,754][ INFO] [aisagent.AISAgent] [main][AISAgent] - C:\\Journal\20170824.jrn not found
+[2017-08-24 12:28:52,756][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-08-24 12:28:52,757][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-08-24 12:28:52,758][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170824
+[2017-08-24 12:28:52,761][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-08-24 12:28:52,761][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-08-24 12:28:52,762][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-08-24 12:28:52,762][ INFO] [aisagent.AISAgent] [main][AISAgent] - C:\\Journal\20170824.jrn not found
+[2017-08-24 12:29:02,769][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-08-24 12:29:02,770][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-08-24 12:29:02,771][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170824
+[2017-08-24 12:29:02,783][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-08-24 12:29:02,784][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-08-24 12:29:02,784][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]

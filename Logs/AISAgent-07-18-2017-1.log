@@ -1,0 +1,115 @@
+[2017-06-19 13:41:08,595][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-06-19 13:41:09,107][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=0
+[2017-06-19 13:41:09,107][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[]
+[2017-06-19 13:41:09,107][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170619
+[2017-06-19 13:41:18,554][ERROR] [aisagent.AISAgent] [main][AISAgent] - Error:
+[2017-06-19 13:41:34,482][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-06-19 13:41:35,028][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=0
+[2017-06-19 13:41:35,028][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[]
+[2017-06-19 13:41:35,028][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170619
+[2017-06-19 13:41:50,845][ERROR] [aisagent.AISAgent] [main][AISAgent] - Error:
+[2017-06-19 13:43:00,273][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-06-19 13:43:00,710][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=0
+[2017-06-19 13:43:00,710][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[]
+[2017-06-19 13:43:00,726][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170619
+[2017-06-19 13:43:00,726][ERROR] [aisagent.AISAgent] [main][AISAgent] - Error:
+[2017-06-19 13:43:34,090][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-06-19 13:43:34,879][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=0
+[2017-06-19 13:43:34,879][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[]
+[2017-06-19 13:43:34,879][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170619
+[2017-06-19 13:43:34,879][ERROR] [aisagent.AISAgent] [main][AISAgent] - java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at java.util.Collections$UnmodifiableList.get(Collections.java:1309)
+	at aisagent.Camera1.Open(Camera1.java:25)
+	at aisagent.AISAgent.main(AISAgent.java:206)
+
+[2017-07-05 09:23:10,431][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-05 09:23:11,056][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-05 09:23:11,056][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-05 09:23:11,056][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170705
+[2017-07-05 09:23:15,282][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (320x240)
+[2017-07-05 09:23:15,285][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-05 09:23:15,285][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-05 09:23:15,286][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-07-05 09:23:56,327][ERROR] [aisagent.AISAgent] [main][AISAgent] - java.lang.NullPointerException
+	at java.io.File.<init>(File.java:277)
+	at aisagent.AISAgent.main(AISAgent.java:379)
+
+[2017-07-05 09:24:05,385][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-05 09:24:05,887][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-05 09:24:05,887][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-05 09:24:05,887][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170705
+[2017-07-05 09:24:09,648][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (320x240)
+[2017-07-05 09:24:09,650][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-05 09:24:09,650][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-05 09:24:09,650][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-07-05 09:25:58,480][ERROR] [aisagent.CompressImage] [main][CompressImage] - java.io.FileNotFoundException: C:\Users\aaftab\Documents\NetBeansProjects\AISAgent\Images\00001111\20170705\092558468_**********6757_1000_0011_1.jpg (The filename, directory name, or volume label syntax is incorrect)
+[2017-07-05 09:25:58,485][ERROR] [aisagent.AISAgent] [main][AISAgent] - java.lang.NullPointerException
+	at aisagent.CompressImage.CompressImage(CompressImage.java:56)
+	at aisagent.AISAgent.main(AISAgent.java:383)
+
+[2017-07-05 09:27:05,617][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-05 09:27:06,222][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-05 09:27:06,222][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-05 09:27:06,222][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170705
+[2017-07-05 09:27:10,014][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (320x240)
+[2017-07-05 09:27:10,015][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-05 09:27:10,016][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-05 09:27:10,016][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-07-05 09:27:32,528][ERROR] [aisagent.CompressImage] [main][CompressImage] - java.io.FileNotFoundException: C:\Users\aaftab\Documents\NetBeansProjects\AISAgent\Images\00001111\20170705\092732518_********6757_1000_0013_1.jpg (The filename, directory name, or volume label syntax is incorrect)
+[2017-07-05 09:27:32,530][ERROR] [aisagent.AISAgent] [main][AISAgent] - java.lang.NullPointerException
+	at aisagent.CompressImage.CompressImage(CompressImage.java:56)
+	at aisagent.AISAgent.main(AISAgent.java:383)
+
+[2017-07-05 09:33:40,944][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-05 09:33:43,100][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-05 09:33:43,100][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-05 09:33:43,100][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170705
+[2017-07-05 09:33:46,874][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (320x240)
+[2017-07-05 09:33:46,875][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-05 09:33:46,876][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-05 09:33:46,876][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-07-14 15:12:18,582][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-14 15:12:19,191][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-14 15:12:19,191][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-14 15:12:19,191][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170714
+[2017-07-14 15:12:23,437][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (320x240)
+[2017-07-14 15:12:23,440][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-14 15:12:23,441][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-14 15:12:23,441][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-07-18 13:40:46,770][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-18 13:40:48,098][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-18 13:40:48,099][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-18 13:40:48,100][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170718
+[2017-07-18 13:40:52,273][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (640x480)
+[2017-07-18 13:40:52,296][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-18 13:40:52,296][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-18 13:40:52,297][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-07-18 13:42:54,453][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-18 13:42:55,211][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-18 13:42:55,211][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-18 13:42:55,213][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170718
+[2017-07-18 13:42:58,980][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (640x480)
+[2017-07-18 13:42:58,983][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-18 13:42:58,984][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-18 13:42:58,984][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-07-18 13:49:23,402][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-18 13:49:24,229][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-18 13:49:24,230][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-18 13:49:24,232][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170718
+[2017-07-18 13:49:26,251][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-07-18 13:49:26,925][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-07-18 13:49:26,926][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-07-18 13:49:26,928][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20170718
+[2017-07-18 13:49:26,949][ERROR] [aisagent.AISAgent] [main][AISAgent] - com.github.sarxos.webcam.WebcamLockException: Webcam Integrated Camera 0 has already been locked
+	at com.github.sarxos.webcam.WebcamLock.lock(WebcamLock.java:286)
+	at com.github.sarxos.webcam.Webcam.open(Webcam.java:265)
+	at com.github.sarxos.webcam.Webcam.open(Webcam.java:232)
+	at aisagent.Camera1.Open(Camera1.java:27)
+	at aisagent.AISAgent.main(AISAgent.java:206)
+
+[2017-07-18 13:49:27,995][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (640x480)
+[2017-07-18 13:49:27,996][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-07-18 13:49:27,997][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-07-18 13:49:27,997][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
