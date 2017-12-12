@@ -193,8 +193,7 @@ System.out.println("Image Quality set="+ImageQuality);
                         }                      
                         }
                         
-                        
-                        
+                                                
                         FileReader fr1=null;
                        
                             File filter=new File("filter.ini");
