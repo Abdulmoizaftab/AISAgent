@@ -242,7 +242,7 @@ System.out.println("Image Quality set="+ImageQuality);
                                  BufferedWriter writer = null;
             writer= new BufferedWriter(new FileWriter(""+JournalPath+"\\"+Date+".jrn",true));
             logger.info(""+JournalPath+"\\"+Date+".jrn made");
-            
+            writer.close();
             
                               
                               

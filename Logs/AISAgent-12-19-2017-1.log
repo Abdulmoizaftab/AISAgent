@@ -1,0 +1,20 @@
+[2017-12-19 13:07:34,171][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-12-19 13:07:35,057][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-12-19 13:07:35,057][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-12-19 13:07:35,057][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20171219
+[2017-12-19 13:07:39,194][ INFO] [aisagent.AISAgent] [main][AISAgent] - Camera 1 Opened (640x480)
+[2017-12-19 13:07:39,196][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-12-19 13:07:39,197][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-12-19 13:07:39,198][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-12-19 13:07:39,222][ INFO] [aisagent.AISAgent] [main][AISAgent] - C:\\Journal\20171219.jrn not found
+[2017-12-19 13:07:39,223][ INFO] [aisagent.AISAgent] [main][AISAgent] - C:\\Journal\20171219.jrn made
+[2017-12-19 13:07:39,223][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-12-19 13:07:39,224][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-12-19 13:07:39,225][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20171219
+[2017-12-19 13:07:39,230][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event List:[1001, 1003, 1017, 1018, 1019]
+[2017-12-19 13:07:39,230][ INFO] [aisagent.AISAgent] [main][AISAgent] - Regex List:[.*<- TRANSACTION END, (?<=TRACK 2 DATA:)(.*), .*CASH PRESENTED, .*CASH TAKEN, .*CASH RETRACTED]
+[2017-12-19 13:07:39,231][ INFO] [aisagent.AISAgent] [main][AISAgent] - Event Cam List:[1, 1, 1, 1, 1]
+[2017-12-19 14:26:12,908][ INFO] [aisagent.AISAgent] [main][AISAgent] - Application Started
+[2017-12-19 14:26:13,609][ INFO] [aisagent.AISAgent] [main][AISAgent] - No. of Cameras detected=1
+[2017-12-19 14:26:13,609][ INFO] [aisagent.AISAgent] [main][AISAgent] - Names=[Webcam Integrated Camera 0]
+[2017-12-19 14:26:13,609][ INFO] [aisagent.AISAgent] [main][AISAgent] - Today's Date=20171219
